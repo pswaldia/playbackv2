@@ -13,7 +13,7 @@ class RecordViewController: UIViewController,AVAudioRecorderDelegate {
     var audioRecorder:AVAudioRecorder!
     @IBOutlet weak var startRecordo: UIButton!
     @IBAction func startRecord(_ sender: Any) {
-        RecordingLabel.text="Recording in Progress"
+        RecordingLabel.text="Recording In Progress"
         startRecordo.isEnabled=false
         stopRecordo.isEnabled=true
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)[0] as String
